@@ -21,3 +21,11 @@ jobs:
         run: npm i
       - name: Run Unit Tests
         run: npm t
+
+  security-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Check for security issue
+        run: npm audit --audit-
