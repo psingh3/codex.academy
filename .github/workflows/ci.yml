@@ -10,10 +10,10 @@ jobs:
       - name: Build
         run: npm i && npm run build
 
-tests:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-    - name: Run Unit Tests
-      run: npm t
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Run Unit Tests
+        run: npm t
